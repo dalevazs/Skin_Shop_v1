@@ -1,5 +1,5 @@
 import streamlit as st
-from skins import LegendarySkin, SeasonalSkin, CustomSkin
+from skin_module import LegendarySkin, SeasonalSkin, CustomSkin
 
 # Load assets
 base_character = "assets/character_base_2.png"
