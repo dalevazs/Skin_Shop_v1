@@ -2,11 +2,12 @@ from PIL import Image
 
 # Base Skin class
 class Skin:
-    def __init__(self, name, rarity, base_price, image):
+    def __init__(self, name, rarity, base_price, image_path):
         self.name = name
         self.rarity = rarity
         self.base_price = base_price
-        self.image = image
+        self.image_path = image_path  # Store the file path
+        self.image = Image.open(image_path)  # Load the image
 
     def calculate_price(self):
         return self.base_price
